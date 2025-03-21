@@ -1,0 +1,21 @@
+int main()
+{
+    float val1, val2, divisao;
+    
+    
+    
+    printf("insira o valor dividendo\n");
+    scanf("%f", &val1);
+    printf("insira o valor divisor\n");
+    scanf("%f", &val2);
+    
+    if(val2==0){
+        printf("nao e possivel dividir um numero por 0\n");
+    }
+    if(val2!=0){
+        divisao = val1/val2;
+        printf("A divisao do valor %.2f  pelo valor %.2f sera igual a: %.2f\n", val1, val2, divisao);
+    }
+
+    return 0;
+}
