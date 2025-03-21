@@ -1,0 +1,47 @@
+
+    #include <stdio.h>
+
+int main()
+{
+    int opcao;
+    
+    
+printf("Menu Principal:\n");
+printf("1 - fim\n");
+printf("2 - Cadastro\n");
+printf("3 - Consulta\n");
+printf("responda com um dos numeros\n");
+
+scanf("%d", &opcao);
+    
+    
+    
+switch (opcao)
+{
+    case 1: 
+        {
+            printf("Voce escolheu a opcao: Fim\n");
+            break;
+        }
+        
+    case 2:
+        {
+            printf("Voce escolheu a opcao: Cadastro\n");
+            break;
+        }
+        
+    case 3:
+        {
+            printf("Voce escolheu a opcao: Consulta\n");
+            break;
+        }
+        
+        default:
+        {
+            printf("Resposta invalida!\n");
+        }
+}
+    
+    
+    return 0;
+}
