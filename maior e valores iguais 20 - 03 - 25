@@ -1,0 +1,25 @@
+int main()
+{
+    int val1, val2, val3;
+    
+    printf("digite o valor 1 valor 2 e valor 3\n");
+    scanf("%d %d %d", &val1, &val2, &val3);
+    
+    if(val1 >= val2 && val1 >= val3){
+        printf("O maior valor e o %d\n", val1);
+    }
+    
+    else if(val2 >= val1 && val2 >= val3){
+        printf("O maior valor e o %d\n", val2);
+    }
+    
+    else if(val3 >= val1 && val3 >= val2){
+        printf("O maior valoer e o %d\n", val3);
+    }
+    
+    else if(val1 == val2 && val1 == val3){
+        printf("valores iguais\n");
+    }
+    
+    return 0;
+}
