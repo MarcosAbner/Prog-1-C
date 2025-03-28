@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, cont;
+    
+     printf("Entre um número: \n");
+     scanf("%d", &num);
+     
+     for(cont=1; cont*(cont+1)*(cont+2) <= num; cont++)
+    {
+        if (cont*(cont+1)*(cont+2) == num)
+            printf("O valor %d e triangular (%d*%d*%d)\n",num, cont, cont+1, cont+2);
+            
+            
+    }
+    
+    cont--;
+    if (cont*(cont+1)*(cont+2) != num)
+        printf("O valor %d NAO e triangular (%d %d %d)\n", num);
+        
+     
+     
+
+    return 0;
+}
