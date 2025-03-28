@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, cont, div=0; 
+    
+    
+    printf("Entre com um numero\n");
+    scanf("%d", &n);
+    
+    for(cont = 2; cont <= n; cont++)
+        if(n % cont == 0) 
+            div++;
+            
+    if(div==1)
+        printf("O numero %d e primo", n);
+    else
+        printf("O numero %d NAO e primo", n);
+    
+    return 0;
+}
