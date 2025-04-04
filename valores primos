@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+	int i, valor, qtd_div;
+	
+	printf("entre um valor");
+	scanf("%d", &valor);
+	
+	i=1;
+	while(i<=valor)
+	{
+	    if(valor%i==0)
+	        qtd_div++;
+	   i++;
+	}
+	if(qtd_div==2)
+	    printf("O valor %d eh primo", valor);
+	else
+	printf("O valor %d NAO eh primo pois existm %d divisores ", valor, qtd_div);
+	
+	
+}
