@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+	int i=0, alunos, nota, nmax=0, nmin=100;
+	
+	
+	
+	printf("entre com a quantidade de alunos\n");
+	scanf("%d", &alunos);
+	i=1;
+	while(i<=alunos)
+    {
+        printf("Entre com a notaa do aluno %d\n", i);
+        scanf("%d", &nota);
+        if(nota > nmax)
+            nmax=nota;
+        if(nota < nmin)
+            nmin=nota;
+        i++;
+    }
+    printf("Maior nota: %d\nMenor nota: %d\n", nmax, nmin);
+	
+}
